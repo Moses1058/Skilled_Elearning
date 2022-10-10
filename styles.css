@@ -15,7 +15,7 @@ body {
 
 }
 main {
-    padding: 16px 16px 0px 16px;
+    padding: 0px 16px 0px 16px;
     width: 375px;
 }
 #image_hero_tablet, #image_hero_desktop{
@@ -157,12 +157,159 @@ footer{
 #logo_light {
     color: #FFFFFF;
 }
-.button_3 {
+#button_3 {
     background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
     border-radius: 28px;   
     width: 140px;
     height: 48px;
 }
-.button_3:hover{
+#button_3:hover{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
+
+/* Next changes will only affect tablet viewers */
+
+@media only screen and (min-width: 768px) {
+
+    main, header, footer {
+        width: 768px;
+        padding: 24px 40px 0px 39px;
+    }
+    article {
+        margin-top: 75px;
+        width: 398px;
+    }
+    #image_hero_mobile{
+        display: none;
+    }
+    #course_table {
+        grid-template-columns: auto auto;
+        row-gap: 56px;
+        column-gap: 10px;
+        margin-top: 210px;
+    }
+    .course {
+        padding-left: 32px;
+    }
+    #check_out {
+        padding: 56px 21px 139px 32px;
+    } 
+    footer {
+        margin-top: 86px;
+        padding-top: 0;
+    }
+    main {
+        position: relative;
+        /* overflow: hidden; */
+    }
+    #all {
+        overflow: hidden;
+    }
+    /* }
+    #image_hero_box {
+        margin: 0;
+        width: 640px;
+        height: 640px;
+        background-color: black;
+        position: absolute;
+        right: 0;
+        top: 0;
+    } */
+    #image_hero_tablet {
+        display: block;
+        position: absolute;
+        width: 40rem;
+        height: 40rem;
+        z-index: -1;
+        top: -4.938rem;
+        right: -17.188rem;
+    }
+}
+
+/* Bellow styles will fit for windows */
+@media only screen and (min-width: 1440px){
+    main, footer, header {
+        width: 1440px;
+        padding: 24px 165px 0px 165px;
+    }
+    .logo {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    button {
+        font-size: 18px;
+    }
+    #button_1 {
+        width: 167px;
+        height: 56px;
+    }
+    article {
+        margin: 148px 0px 250px 0px;
+        width: 457px;
+        height: 359px;
+    }
+    h1 {
+        font-size: 56px;
+        line-height: 71px;        
+    }
+    .caption {
+        font-size: 18px;
+        margin: 24px 0px 24px 0px;
+        line-height: 28px;
+    }
+    #main_caption {
+        margin: 29px 0px 40px 0px;
+    }
+    #button_2 {
+        width: 167px;
+        height: 63px;
+    }
+    #course_table{
+        grid-template-columns: auto auto auto;
+        margin: 0;
+        row-gap: 80px;
+        column-gap: 30px;
+    }
+    .course {
+        width: 350px;
+        height: 322px;
+        padding: 64px 0px 40px 32px;
+    }
+    h2{
+        font-size: 32px;
+        line-height: 40px;        
+    }
+    h3{
+        font-size: 24px;
+        line-height: 30px;        
+    }
+    /* .course_start{
+        margin-bottom: 40px;
+    } */
+    footer {
+        margin-top: 140px;
+    }
+    #button_3 {
+        width: 167px;
+        height: 56px;
+    }
+    .more_margin {
+        margin-bottom: 52px;
+    }
+    #image_hero_tablet{
+        display: none;
+    }
+    main {
+        position: relative;
+    }
+    #image_hero_desktop {
+        display: block;
+        position: absolute;
+        Width: 1021px;
+        Height: 921px;
+        z-index: -1;
+        top: -225px;
+        left: 750px;
+    }
+}
+
